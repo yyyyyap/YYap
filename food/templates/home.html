@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+   <h2>提交用户信息</h2>
+    <form action="{% url 'signup' %}">
+        <div class="mb-3">
+            <label for="number" class="form-label">
+                用户账号:
+            </label>
+            <input type="number" class="form-control" name="number"/>
+        </div>
+        <button type="submit" class="btn btn-primary">
+            注册
+        </button>
+    </form>
+</div>
+
+{% endblock content %}
+
+
